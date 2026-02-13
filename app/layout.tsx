@@ -21,19 +21,14 @@ const bebas = Bebas_Neue({
   variable: "--font-display",
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const faviconUrl = `${basePath}/favicon.ico`;
+
 export const metadata: Metadata = {
-  title: "Arcana - Tarot Guide",
+  title: "Fiction Faith - a tarot bible",
   description:
     "A minimalist tarot card reference app with meanings, keywords, and interpretations.",
-  icons: {
-    icon: [
-      { url: "/favicon/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon/favicon.ico" },
-    ],
-    apple: [{ url: "/favicon/apple-touch-icon.png" }],
-  },
-  manifest: "/favicon/site.webmanifest",
+  icons: { icon: faviconUrl },
 };
 
 export const viewport: Viewport = {

@@ -93,7 +93,7 @@ declare const require: {
   };
 };
 
-const ctx = require.context("../cards_json", false, /\.json$/);
+const ctx = require.context("../data/cards", false, /\.json$/);
 
 function toSlug(name: string): string {
   return name
