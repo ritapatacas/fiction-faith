@@ -1,0 +1,19 @@
+.next/*
+out/
+node_modules/*
+
+# Prefer pnpm
+package-lock.json
+
+# Env and local overrides
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+.pnpm-store/*
